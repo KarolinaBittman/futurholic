@@ -62,7 +62,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--inter);font-weight
 .sh em{font-style:italic;color:var(--muted2)}
 
 .bento{display:grid;grid-template-columns:repeat(12,1fr);gap:10px}
-.bc{background:var(--s1);border:1px solid var(--border);border-radius:14px;padding:36px;transition:transform 0.3s cubic-bezier(0.16,1,0.3,1),border-color 0.3s ease,background 0.3s ease;position:relative;overflow:hidden;cursor:default}
+.bc{background:var(--s1);border:1px solid var(--border);border-radius:10px;padding:36px;transition:transform 0.3s cubic-bezier(0.16,1,0.3,1),border-color 0.3s ease,background 0.3s ease;position:relative;overflow:hidden;cursor:default}
 .bc::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(240,237,232,.04) 0%,transparent 55%);opacity:0;transition:opacity .3s;pointer-events:none}
 .bc:hover::before{opacity:1}
 .bc:hover{border-color:rgba(240,237,232,.18);transform:translateY(-4px) scale(1.008)}
@@ -83,7 +83,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--inter);font-weight
 .sl2{font-size:11px;color:var(--muted2);margin-top:3px;letter-spacing:.04em}
 
 .wgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-.wcard{background:var(--s1);border:1px solid var(--border);border-radius:14px;padding:40px;cursor:pointer;transition:all .3s;position:relative;overflow:hidden}
+.wcard{background:var(--s1);border:1px solid var(--border);border-radius:10px;padding:40px;cursor:pointer;transition:all .3s;position:relative;overflow:hidden}
 .wcard::before{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--text);opacity:.3;transition:width .4s ease}
 .wcard:hover::before{width:100%}
 .wcard::after{content:'↗';position:absolute;top:28px;right:28px;font-size:20px;color:var(--text);transition:all 0.3s cubic-bezier(0.16,1,0.3,1);opacity:0;transform:translate(8px,-8px)}
@@ -96,14 +96,14 @@ body{background:var(--bg);color:var(--text);font-family:var(--inter);font-weight
 .wtag{font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted2);background:var(--s2);border:1px solid var(--border);padding:4px 10px;border-radius:100px}
 
 .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.pcard{background:var(--s1);border:1px solid var(--border);border-radius:14px;padding:40px;position:relative;overflow:hidden}
+.pcard{background:var(--s1);border:1px solid var(--border);border-radius:10px;padding:40px;position:relative;overflow:hidden}
 .pnum{font-family:var(--syne);font-size:100px;font-weight:800;color:var(--s3);line-height:1;position:absolute;top:16px;right:20px;letter-spacing:-.04em;transition:color .3s}
 .pcard:hover .pnum{color:rgba(240,237,232,.05)}
 .ptitle{font-family:var(--syne);font-size:22px;font-weight:700;margin-bottom:14px;position:relative;color:var(--text)}
 .pdesc{font-size:14px;color:var(--muted2);line-height:1.7;position:relative}
 
 .pricegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.prcard{background:var(--s1);border:1px solid var(--border);border-radius:14px;padding:40px;transition:all .3s;position:relative;overflow:hidden}
+.prcard{background:var(--s1);border:1px solid var(--border);border-radius:10px;padding:40px;transition:all .3s;position:relative;overflow:hidden}
 .prcard::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(240,237,232,.04) 0%,transparent 55%);opacity:0;transition:opacity .3s;pointer-events:none}
 .prcard:hover::before{opacity:1}
 .prcard.hot{background:var(--s2);border-color:rgba(240,237,232,.2)}
@@ -118,7 +118,7 @@ body{background:var(--bg);color:var(--text);font-family:var(--inter);font-weight
 .prcard.hot .pbtn{background:var(--ac);border-color:var(--ac);color:#0a0a0c}
 .prcard.hot .pbtn:hover{background:var(--ac2);border-color:var(--ac2)}
 
-.ctasec{margin:0 48px 100px;background:var(--s1);border:1px solid var(--border);border-radius:20px;padding:80px;display:flex;align-items:center;gap:80px;position:relative;overflow:hidden}
+.ctasec{margin:0 48px 100px;background:var(--s1);border:1px solid var(--border);border-radius:10px;padding:80px;display:flex;align-items:center;gap:80px;position:relative;overflow:hidden}
 .ctaorb{position:absolute;right:-80px;top:-80px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(240,237,232,.04) 0%,transparent 65%);pointer-events:none}
 .ctal{flex:1}
 .ctah{font-family:var(--syne);font-size:clamp(38px,5vw,64px);font-weight:800;line-height:.95;letter-spacing:-.03em;margin-bottom:20px;color:var(--text)}
@@ -300,7 +300,7 @@ export default function App(){
           <div className="sbento" style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gridTemplateRows:"200px 200px 160px",gap:10}}>
 
             {/* COL1 ROW1-2: tall card */}
-            <div className="bc" style={{gridColumn:"1",gridRow:"1/3",background:"var(--s2)",display:"flex",flexDirection:"column",justifyContent:"flex-end",padding:28}} onMouseMove={mm}>
+            <div className="bc" style={{gridColumn:"1",gridRow:"1/3",background:"var(--s2)",display:"flex",flexDirection:"column",justifyContent:"flex-start",padding:28}} onMouseMove={mm}>
               <div style={{fontSize:10,fontWeight:700,letterSpacing:".12em",textTransform:"uppercase",color:"var(--muted2)",fontFamily:"var(--syne)",marginBottom:16}}>01 — Website</div>
               <div style={{fontFamily:"var(--syne)",fontSize:26,fontWeight:800,lineHeight:1.1,marginBottom:10}}>Modern sites.<br/>Fast delivery.</div>
               <div style={{fontSize:12,color:"var(--muted2)",lineHeight:1.6,marginBottom:14}}>React, Framer or WordPress. Mobile-perfect, SEO-ready.</div>
@@ -470,9 +470,9 @@ export default function App(){
             </div>
             <div className="ctar">
               {sent?(
-                <div style={{fontFamily:"var(--syne)",fontSize:28,fontWeight:800,lineHeight:1.3}}>
-                  <span style={{color:"var(--text)"}}>Thank you.</span><br/>
-                  <span style={{fontSize:16,color:"var(--muted2)",fontFamily:"var(--inter)",fontWeight:300}}>We'll be in touch soon.</span>
+                <div style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'flex-start',height:'100%',minHeight:300,gap:12}}>
+                  <div style={{fontFamily:"var(--syne)",fontSize:40,fontWeight:800,letterSpacing:'-.025em',color:'var(--text)',lineHeight:1}}>Thank you.</div>
+                  <div style={{fontSize:15,color:'var(--muted2)',lineHeight:1.6}}>We'll be in touch soon.</div>
                 </div>
               ):(
                 <form className="form" onSubmit={handleSubmit}>
