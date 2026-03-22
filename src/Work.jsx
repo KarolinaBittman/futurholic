@@ -9,7 +9,6 @@ const pageCss = `
 .slab{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted2);margin-bottom:20px}
 .slab::before{content:'';width:20px;height:1px;background:var(--muted);display:block}
 .work-title{font-family:var(--syne);font-size:clamp(48px,8vw,110px);font-weight:800;line-height:.9;letter-spacing:-.035em;margin-bottom:24px}
-.work-title .ghost{display:block;color:transparent;-webkit-text-stroke:1.5px rgba(240,237,232,.35)}
 .work-sub{font-size:16px;color:var(--muted2);max-width:440px;line-height:1.8}
 
 .cs-section{padding:0 44px 120px}
@@ -242,79 +241,77 @@ function GhostCheck() {
   );
 }
 
-/* ─── TAO INFINITY ──────────────────────────────────────── */
-function TaoInfinity() {
+/* ─── TAXMETER ──────────────────────────────────────────── */
+function TaxMeter() {
   return (
     <div className="cs-block">
       <FU>
-        <div className="cs-label">03 — TAO Infinity</div>
+        <div className="cs-label">03 — TaxMeter</div>
         <div className="cs-grid cs-grid-4" style={{ marginBottom: 10 }}>
           <div className="bc cp" style={{ gridColumn: "1/3", background: "var(--s2)" }} onMouseMove={mm}>
-            <div className="year-badge">2023 · Ongoing</div>
-            <div className="cs-name">TAO Infinity</div>
-            <div className="cs-tagline">Sustainable activewear brand based in Zürich. Full Shopify rebuild, SEO overhaul, and n8n automation stack — turning their store into a self-running growth engine.</div>
+            <div className="year-badge">2026 · Launching soon</div>
+            <div className="cs-name">TaxMeter</div>
+            <div className="cs-tagline">Tax tracking app for Swiss sole proprietors in Kanton Zürich. Real-time tax calculations, QR-bill invoicing, receipt scanning with OCR. Built in React Native, launching on the App Store.</div>
             <div className="cs-tags">
-              {["Shopify","n8n","SEO","Email Automation","Meta Ads"].map(t => <span key={t} className="btag">{t}</span>)}
+              {["React Native","iOS","Supabase","Swiss tax"].map(t => <span key={t} className="btag">{t}</span>)}
             </div>
           </div>
-          {/* Organic traffic */}
           <div className="bc cp-sm" style={{ background: "var(--s1)", display: "flex", flexDirection: "column", justifyContent: "space-between" }} onMouseMove={mm}>
-            <div className="stat-label">Organic traffic</div>
+            <div className="stat-label">Target users</div>
             <div>
-              <div className="stat-val xl">+3×</div>
-              <div className="stat-unit">in 6 months</div>
+              <div className="stat-val xl">60K+</div>
+              <div className="stat-unit">sole proprietors in ZH</div>
             </div>
           </div>
-          {/* Automations */}
           <div className="bc cp-sm" style={{ background: "var(--s1)", display: "flex", flexDirection: "column", justifyContent: "space-between" }} onMouseMove={mm}>
-            <div className="stat-label">n8n flows</div>
+            <div className="stat-label">Platform</div>
             <div>
-              <div className="stat-val xl">8</div>
-              <div className="stat-unit">active automations</div>
+              <div className="stat-val xl">iOS</div>
+              <div className="stat-unit">App Store launch</div>
             </div>
           </div>
         </div>
         {/* Row 2: 3 equal */}
         <div className="cs-grid cs-grid-3" style={{ marginBottom: 10 }}>
           <div className="bc cp" style={{ background: "var(--s1)" }} onMouseMove={mm}>
-            <div className="cs-block-title">Shopify rebuild</div>
-            <div className="cs-body">Complete theme rebuild from scratch. Mobile-first, sub-2s load time, conversion-focused PDPs, size guide UX overhaul. AOV increased within first month.</div>
+            <div className="cs-block-title">The problem</div>
+            <div className="cs-body">Swiss sole proprietors handle tax manually — spreadsheets, paper receipts, last-minute panic. TaxMeter replaces that with a real-time dashboard that knows what you owe at any moment.</div>
           </div>
           <div className="bc cp" style={{ background: "var(--s1)" }} onMouseMove={mm}>
-            <div className="cs-block-title">SEO strategy</div>
-            <div className="cs-body">Technical audit, structured data, collection page rewrites, long-tail content targeting. Ranked top 3 for primary category keywords within 4 months.</div>
-          </div>
-          <div className="bc cp" style={{ background: "var(--s1)" }} onMouseMove={mm}>
-            <div className="cs-block-title">n8n automations</div>
+            <div className="cs-block-title">Core features</div>
             <div className="flow-steps">
               {[
-                ["→", <><strong>Abandoned cart</strong> WhatsApp sequence</>],
-                ["→", <><strong>Post-purchase</strong> review request flow</>],
-                ["→", <><strong>Low stock</strong> reorder alerts</>],
-                ["→", <><strong>Weekly</strong> sales digest to Notion</>],
+                ["→", <><strong>Real-time</strong> tax liability calculator</>],
+                ["→", <><strong>QR-bill</strong> invoicing built in</>],
+                ["→", <><strong>OCR receipt</strong> scanning via camera</>],
+                ["→", <><strong>Kanton Zürich</strong> tax rules baked in</>],
               ].map(([n, t]) => (
                 <div key={n} className="flow-step"><span className="flow-n">{n}</span><span className="flow-txt">{t}</span></div>
               ))}
             </div>
           </div>
-        </div>
-        {/* Quote row */}
-        <div className="cs-grid cs-grid-2">
           <div className="bc cp" style={{ background: "var(--s2)", display: "flex", alignItems: "center" }} onMouseMove={mm}>
-            <div className="cs-quote">From a manual store to <em>an automated growth machine</em> — without hiring anyone.</div>
+            <div className="cs-quote">Always know <em>what you owe.</em> No surprises at year end.</div>
           </div>
+        </div>
+        {/* Meta row */}
+        <div className="cs-grid cs-grid-2">
           <div className="bc cp" style={{ background: "var(--s1)", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }} onMouseMove={mm}>
             {[
-              ["Ongoing since", "2023"],
-              ["Scope", "Retainer"],
-              ["Stack", "Shopify + n8n"],
-              ["Location", "Zürich .ch"],
+              ["Status", "Launching soon"],
+              ["Platform", "iOS / React Native"],
+              ["Backend", "Supabase"],
+              ["Market", "Kanton Zürich"],
             ].map(([l, v]) => (
               <div key={l} style={{ borderTop: "1px solid var(--border)", paddingTop: 12 }}>
                 <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: ".1em", textTransform: "uppercase", color: "var(--muted2)", fontFamily: "var(--syne)", marginBottom: 4 }}>{l}</div>
                 <div style={{ fontFamily: "var(--syne)", fontSize: 16, fontWeight: 800, color: "var(--text)" }}>{v}</div>
               </div>
             ))}
+          </div>
+          <div className="bc cp" style={{ background: "var(--s1)" }} onMouseMove={mm}>
+            <div className="cs-block-title">Why now</div>
+            <div className="cs-body">Switzerland has ~600K sole proprietors with no dedicated mobile-first tax tool. Existing solutions are desktop-only, overcomplicated, and not built around Swiss cantonal logic. TaxMeter is.</div>
           </div>
         </div>
       </FU>
@@ -395,7 +392,7 @@ export default function Work() {
           <div className="slab">Selected work</div>
           <h1 className="work-title">
             Case<br />
-            <span className="ghost">studies.</span>
+            <span style={{display:'inline-block',background:'linear-gradient(90deg, #333333 0%, #F0EDE8 100%)',WebkitBackgroundClip:'text',WebkitTextFillColor:'transparent',backgroundClip:'text',color:'transparent',paddingBottom:'0.2em',lineHeight:'1.15'}}>studies.</span>
           </h1>
           <p className="work-sub">Four projects. Different problems, same standard — shipped fast, built right, owned fully.</p>
         </FU>
@@ -404,7 +401,7 @@ export default function Work() {
       <div className="cs-section">
         <Rivalysis />
         <GhostCheck />
-        <TaoInfinity />
+        <TaxMeter />
         <AlpenVault />
       </div>
 
