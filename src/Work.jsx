@@ -135,9 +135,10 @@ function Rivalysis() {
             <div className="live-dot" style={{ marginBottom: 20 }}><span className="ldot" />Live in production</div>
             <div className="cs-name">Rivalysis</div>
             <div className="cs-tagline">Competitive intelligence SaaS. Drop a competitor's URL and receive a full PDF analysis — positioning, pricing, messaging, weak spots — in under 60 seconds.</div>
-            <div className="cs-tags">
+            <div className="cs-tags" style={{ marginBottom: 20 }}>
               {["React","Claude API","Firecrawl","Stripe","Supabase","Vercel"].map(t => <span key={t} className="btag">{t}</span>)}
             </div>
+            <a href="https://rivalysis.com" target="_blank" rel="noopener noreferrer" style={{ fontSize: 12, fontWeight: 700, letterSpacing: ".06em", textTransform: "uppercase", color: "var(--text)", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 6, opacity: .7, transition: "opacity .2s" }} onMouseEnter={e=>e.currentTarget.style.opacity=1} onMouseLeave={e=>e.currentTarget.style.opacity=.7}>Visit rivalysis.com ↗</a>
           </div>
           {/* Stat: 60s */}
           <div className="bc cp-sm" style={{ background: "var(--s1)", display: "flex", flexDirection: "column", justifyContent: "space-between" }} onMouseMove={mm}>
@@ -203,9 +204,10 @@ function GhostCheck() {
             <div className="live-dot" style={{ marginBottom: 20 }}><span className="ldot" />Live in production</div>
             <div className="cs-name">GhostCheck</div>
             <div className="cs-tagline">AI-powered CRO audit tool. Paste your URL, get a scored breakdown of every conversion blocker: slow CTAs, weak copy, broken trust signals, accessibility gaps.</div>
-            <div className="cs-tags">
+            <div className="cs-tags" style={{ marginBottom: 20 }}>
               {["React","Claude API","Browserless","Tailwind","Vercel"].map(t => <span key={t} className="btag">{t}</span>)}
             </div>
+            <a href="https://ghostcheck.eu" target="_blank" rel="noopener noreferrer" style={{ fontSize: 12, fontWeight: 700, letterSpacing: ".06em", textTransform: "uppercase", color: "var(--text)", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 6, opacity: .7, transition: "opacity .2s" }} onMouseEnter={e=>e.currentTarget.style.opacity=1} onMouseLeave={e=>e.currentTarget.style.opacity=.7}>Visit ghostcheck.eu ↗</a>
           </div>
           <div className="bc cp-sm" style={{ background: "var(--s1)", display: "flex", flexDirection: "column", justifyContent: "space-between" }} onMouseMove={mm}>
             <div className="stat-label">Audit score</div>
@@ -252,9 +254,10 @@ function TaxMeter() {
             <div className="year-badge">2026 · Launching soon</div>
             <div className="cs-name">TaxMeter</div>
             <div className="cs-tagline">Tax tracking app for Swiss sole proprietors in Kanton Zürich. Real-time tax calculations, QR-bill invoicing, receipt scanning with OCR. Built in React Native, launching on the App Store.</div>
-            <div className="cs-tags">
+            <div className="cs-tags" style={{ marginBottom: 20 }}>
               {["React Native","iOS","Supabase","Swiss tax"].map(t => <span key={t} className="btag">{t}</span>)}
             </div>
+            <a href="https://taxmeter.ch" target="_blank" rel="noopener noreferrer" style={{ fontSize: 12, fontWeight: 700, letterSpacing: ".06em", textTransform: "uppercase", color: "var(--text)", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 6, opacity: .7, transition: "opacity .2s" }} onMouseEnter={e=>e.currentTarget.style.opacity=1} onMouseLeave={e=>e.currentTarget.style.opacity=.7}>Visit taxmeter.ch ↗</a>
           </div>
           <div className="bc cp-sm" style={{ background: "var(--s1)", display: "flex", flexDirection: "column", justifyContent: "space-between" }} onMouseMove={mm}>
             <div className="stat-label">Target users</div>
@@ -331,9 +334,10 @@ function AlpenVault() {
             <div className="live-dot" style={{ marginBottom: 20 }}><span className="ldot" />Live in production</div>
             <div className="cs-name">AlpenVault</div>
             <div className="cs-tagline">Institutional Bitcoin custody platform designed for the Swiss market. Cold-storage focused, compliance-first design language — trust built into every pixel.</div>
-            <div className="cs-tags">
+            <div className="cs-tags" style={{ marginBottom: 20 }}>
               {["Figma","Framer","UI/UX","Motion","Swiss Design"].map(t => <span key={t} className="btag">{t}</span>)}
             </div>
+            <a href="https://alpen-vault.framer.ai" target="_blank" rel="noopener noreferrer" style={{ fontSize: 12, fontWeight: 700, letterSpacing: ".06em", textTransform: "uppercase", color: "var(--text)", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 6, opacity: .7, transition: "opacity .2s" }} onMouseEnter={e=>e.currentTarget.style.opacity=1} onMouseLeave={e=>e.currentTarget.style.opacity=.7}>Visit alpen-vault.framer.ai ↗</a>
           </div>
           <div className="bc cp-sm" style={{ background: "var(--s1)", display: "flex", flexDirection: "column", justifyContent: "space-between" }} onMouseMove={mm}>
             <div className="stat-label">Screens designed</div>

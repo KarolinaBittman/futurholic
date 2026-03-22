@@ -396,10 +396,10 @@ export default function App(){
         <FU delay={100}>
           <div className="wgrid">
             {[
-              {yr:"2026 · Live",title:"Rivalysis",desc:"Competitive intelligence SaaS. One URL → full competitor analysis PDF in 60 seconds.",tags:["React","Claude API","Firecrawl","Stripe"]},
-              {yr:"2025 · Live",title:"GhostCheck",desc:"AI-powered CRO audit tool. Detects conversion blockers and scores your site.",tags:["React","Claude API","Browserless"]},
+              {yr:"2026 · Live",title:"Rivalysis",desc:"Competitive intelligence SaaS. One URL → full competitor analysis PDF in 60 seconds.",tags:["React","Claude API","Firecrawl","Stripe"],href:"https://rivalysis.com"},
+              {yr:"2025 · Live",title:"GhostCheck",desc:"AI-powered CRO audit tool. Detects conversion blockers and scores your site.",tags:["React","Claude API","Browserless"],href:"https://ghostcheck.eu"},
               {yr:"2026 · Launching soon",title:"TaxMeter",desc:"Tax tracking app for Swiss sole proprietors. Real-time calculations, QR-bill invoicing, receipt scanning. Built for Kanton Zürich.",tags:["React Native","iOS","Supabase","Swiss tax"],href:"https://taxmeter.ch"},
-              {yr:"2025 · Live",title:"AlpenVault",desc:"Institutional Bitcoin custody platform designed for the Swiss market.",tags:["Figma","Framer","UI/UX"]},
+              {yr:"2025 · Live",title:"AlpenVault",desc:"Institutional Bitcoin custody platform designed for the Swiss market.",tags:["Figma","Framer","UI/UX"],href:"https://alpen-vault.framer.ai"},
             ].map(w=>(
               w.href
                 ? <a key={w.title} href={w.href} target="_blank" rel="noopener noreferrer" className="wcard" style={{textDecoration:"none"}}>
