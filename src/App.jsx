@@ -150,16 +150,16 @@ footer{padding:28px 48px;border-top:1px solid var(--border);display:flex;align-i
   .sbento>div{grid-column:auto!important;grid-row:auto!important}
 }
 @media(max-width:880px){
-  .nav{padding:16px 20px}.nr a:not(.ncta){display:none}
-  .hero{padding:120px 20px 56px}.ht{font-size:52px}
+  .nav{padding:16px 24px}.nr a:not(.ncta){display:none}
+  .hero{padding:120px 24px 56px}.ht{font-size:52px}
   .hb{flex-direction:column;align-items:flex-start}
-  .sec{padding:64px 20px}
+  .sec{padding:64px 24px}
   .bento{grid-template-columns:1fr}
   .s3,.s4,.s5{grid-column:span 1}
   .wgrid,.pgrid,.pricegrid{grid-template-columns:1fr}
-  .ctasec{flex-direction:column;padding:36px 24px;margin:0 20px 60px}
+  .ctasec{flex-direction:column;padding:36px 24px;margin:0 24px 60px}
   .ctar{width:100%}
-  footer{flex-direction:column;gap:14px;text-align:center;padding:24px 20px}
+  footer{flex-direction:column;gap:14px;text-align:center;padding:24px}
 }
 `;
 
